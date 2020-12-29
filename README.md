@@ -50,7 +50,7 @@ Start the backend server before the frontend client.
 **Backend**
 
   1. Install [PostgreSQL](https://www.postgresql.org/download/) 
-  2. Configure datasource in `application.yml`.
+  2. Create new database for Shopping Store and Configure the datasource in `application.yml`.
   3. `cd backend`.
   4. Run `mvn install`.
   5. Run `mvn spring-boot:run`.
@@ -59,6 +59,8 @@ Start the backend server before the frontend client.
 
 **Frontend**
   1. Install [Node.js and npm](https://www.npmjs.com/get-npm)
+  2. Install build tools: Run `npm install --global windows-build-tools` in Powershell as Admin user
+  3. Install Angular CLI: Run `npm install -g @angular/cli`
   2. `cd frontend`.
   3. Run `npm install`.
   4. Run `ng serve`
