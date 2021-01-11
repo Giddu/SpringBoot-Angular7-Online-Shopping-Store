@@ -23,7 +23,7 @@ import java.util.Set;
 /**
  * Created By Zhu Lin on 3/11/2018.
  */
-@Service
+
 public class CartServiceImpl implements CartService {
     @Autowired
     ProductService productService;
@@ -84,14 +84,6 @@ public class CartServiceImpl implements CartService {
         // Creat an order
         OrderMain order = new OrderMain(user);
         orderRepository.save(order);
-
-        // clear cart's foreign key & set order's foreign key& decrease stock
-        user.getCart().getProducts().forEach(productInOrder -> {
-            productInOrder.setCart(null);
-            productInOrder.setOrderMain(order);
-            productService.decreaseStock(productInOrder.getProductId(), productInOrder.getCount());
-            productInOrderRepository.save(productInOrder);
-        });
 
     }
 }

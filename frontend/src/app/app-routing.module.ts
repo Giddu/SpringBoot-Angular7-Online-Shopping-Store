@@ -24,7 +24,7 @@ const routes: Routes = [
     {path: 'register', component: SignupComponent},
     {path: 'cart', component: CartComponent},
     {path: 'success', component: SignupComponent},
-    {path: 'order/:id', component: OrderDetailComponent, canActivate: [AuthGuard]},
+    {path: 'order/id', component: OrderDetailComponent, canActivate: [AuthGuard]},
     {path: 'order', component: OrderComponent, canActivate: [AuthGuard]},
     {path: 'seller', redirectTo: 'seller/product', pathMatch: 'full'},
     {

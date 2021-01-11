@@ -62,7 +62,7 @@ public class UserController {
         }
     }
 
-    @PutMapping("/profile")
+    @GetMapping("/profile")
     public ResponseEntity<User> update(@RequestBody User user, Principal principal) {
 
         try {

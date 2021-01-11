@@ -47,21 +47,6 @@ public class ProductController {
         return productInfo;
     }
 
-    @PostMapping("/seller/product/new")
-    public ResponseEntity create(@Valid @RequestBody ProductInfo product,
-                                 BindingResult bindingResult) {
-        ProductInfo productIdExists = productService.findOne(product.getProductId());
-        if (productIdExists != null) {
-            bindingResult
-                    .rejectValue("productId", "error.product",
-                            "There is already a product with the code provided");
-        }
-        if (bindingResult.hasErrors()) {
-            return ResponseEntity.badRequest().body(bindingResult);
-        }
-        return ResponseEntity.ok(productService.save(product));
-    }
-
     @PutMapping("/seller/product/{id}/edit")
     public ResponseEntity edit(@PathVariable("id") String productId,
                                @Valid @RequestBody ProductInfo product,

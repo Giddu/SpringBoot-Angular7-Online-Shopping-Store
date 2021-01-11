@@ -116,11 +116,6 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public ProductInfo save(ProductInfo productInfo) {
-        return update(productInfo);
-    }
-
-    @Override
     public void delete(String productId) {
         ProductInfo productInfo = findOne(productId);
         if (productInfo == null) throw new MyException(ResultEnum.PRODUCT_NOT_EXIST);

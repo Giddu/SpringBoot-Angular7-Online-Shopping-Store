@@ -22,7 +22,6 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * Created By Zhu Lin on 3/14/2018.
  */
-@Service
 public class OrderServiceImpl implements OrderService {
     @Autowired
     OrderRepository orderRepository;

@@ -17,7 +17,7 @@
 
             <label class="card-text">
               <strong>Quantity: </strong>
-              <input [(ngModel)]=count
+              <input [(value)]="count"
                      (change)="validateCount()"
                      type="number"
                      name="count"
