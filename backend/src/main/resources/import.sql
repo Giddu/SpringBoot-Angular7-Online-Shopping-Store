@@ -47,7 +47,7 @@ INSERT INTO "public"."product_in_order" VALUES (2147483633, 1,1, 'Kids Party Foo
 -- ----------------------------
 -- Records of product_info
 -- ----------------------------
-INSERT INTO "public"."product_info" VALUES ('B0003', 0, '2018-03-10 10:37:39', 'Java EE', 'https://covers.oreillystatic.com/images/9780596516680/lrg.jpg', 'Head First', 10.00, 1, 200, '2018-03-10 19:42:02');
+INSERT INTO "public"."product_info" VALUES ('B0003', 0, '2018-03-10 10:37:39', 'Java EE', 'https://covers.oreillystatic.com/images/9780596516680/lrg.jpg', 'Head First', 10.00, 2, 200, '2018-03-10 19:42:02');
 INSERT INTO "public"."product_info" VALUES ('C0003', 2, '2018-03-10 12:12:46', 'Mans', 'https://img1.newchic.com/thumb/view/oaupload/newchic/images/00/30/df8a1f83-035c-4942-93d6-49933ac52a34.jpg', 'Coats', 22.00, 0, 222, '2018-03-10 12:12:46');
 INSERT INTO "public"."product_info" VALUES ('D0001', 3, '2018-03-10 06:51:03', 'Everyone likes it', 'https://www.thesun.co.uk/wp-content/uploads/2017/03/nintchdbpict000277254629.jpg?strip=all&w=676', 'Coca Cola', 1.00, 0, 100, '2018-03-10 12:04:13');
 INSERT INTO "public"."product_info" VALUES ('B0002', 0, '2018-03-10 10:35:43', 'Learn Spring', 'https://images-na.ssl-images-amazon.com/images/I/51gHy16h5TL._SX397_BO1,204,203,200_.jpg', 'Spring In Action', 20.00, 0, 195, '2018-03-10 10:35:43');
