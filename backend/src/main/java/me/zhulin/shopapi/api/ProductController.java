@@ -54,6 +54,11 @@ public class ProductController {
         if (bindingResult.hasErrors()) {
             return ResponseEntity.badRequest().body(bindingResult);
         }
+
+        if (productId != null && productId.trim().length() != 0) {
+            return ResponseEntity.badRequest().body("productId should not be null");
+        }
+
         if (!productId.equals(product.getProductId())) {
             return ResponseEntity.badRequest().body("Id Not Matched");
         }
